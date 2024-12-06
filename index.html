@@ -109,17 +109,11 @@
         }
 
         /* Footer */
+        
         footer {
             text-align: center;
             padding: 1rem;
-            background: #222;
-            color: white;
-        }
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #222;
+            background: #01003a;
             color: white;
         }
 
@@ -130,170 +124,171 @@
 
 
 
+/* General Styles */ 
 
-    section {
-      padding: 20px;
-      text-align: center;
-    }
+.section {
+  padding: 20px;
+  text-align: center;
+}
 
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
+h2 {
+  font-size: 1.8rem;
+}
 
-    p {
-      color: #555;
-    }
+p {
+  color: #555;
+}
 
-    /* Grid Container */
-    .grid-container {
-      position: relative;
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      height: 450px; /* Increased height slightly */
-    }
+/* Grid Container */
+.grid-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 400px;
+}
 
-    .image {
-      position: absolute;
-      border-radius: 8px;
-      object-fit: cover;
-      transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
-    }
+.image {
+  position: absolute;
+  border-radius: 8px;
+  object-fit: cover;
+}
 
-    /* Enlarged Layout */
-    .image-1 {
-      top: 20px;
-      left: 10%;
-      width: 220px; /* Increased size */
-      height: 270px;
-    }
+/* Section-Specific Image Layouts */
 
-    .image-2 {
-      top: 10px;
-      left: 40%;
-      width: 170px;
-      height: 170px;
-    }
+/* Section 1: Save Ideas You Like */
+.image-1 {
+  top: 20px;
+  left: 10%;
+  width: 330px;
+  height: 350px;
+}
 
-    .image-3 {
-      top: 200px;
-      left: 60%;
-      width: 240px;
-      height: 140px;
-    }
+.image-2 {
+  top: 10px;
+  left: 40%;
+  width: 250px;
+  height: 200px;
+}
 
-    .image-4 {
-      top: 100px;
-      left: 80%;
-      width: 120px;
-      height: 120px;
-    }
+.image-3 {
+  top: 200px;
+  left: 60%;
+  width: 350px;
+  height: 200px;
+}
 
-    .image-5 {
-      top: 0px;
-      left: 5%;
-      width: 270px;
-      height: 270px;
-    }
+.image-4 {
+  top: 100px;
+  left: 80%;
+  width: 200px;
+  height: 250px;
+}
 
-    .image-6 {
-      top: 20px;
-      left: 35%;
-      width: 220px;
-      height: 320px;
-    }
+/* Section 2: Search for an Idea */
+.image-5 {
+  top: 0px;
+  left: 5%;
+  width: 350px;
+  height: 300px;
+}
 
-    .image-7 {
-      top: 200px;
-      left: 60%;
-      width: 170px;
-      height: 170px;
-    }
+.image-6 {
+  top: 20px;
+  left: 35%;
+  width: 200px;
+  height: 300px;
+}
 
-    .image-8 {
-      top: 50px;
-      left: 80%;
-      width: 140px;
-      height: 140px;
-    }
+.image-7 {
+  top: 200px;
+  left: 60%;
+  width: 200px;
+  height: 200px;
+}
 
-    .image-9 {
-      top: 10px;
-      left: 5%;
-      width: 220px;
-      height: 270px;
-    }
+.image-8 {
+  top: 50px;
+  left: 80%;
+  width: 200px;
+  height: 200px;
+}
 
-    .image-10 {
-      top: 30px;
-      left: 35%;
-      width: 170px;
-      height: 170px;
-    }
+/* Section 3: Sign Up */
+.image-9 {
+  top: 10px;
+  left: 5%;
+  width: 300px;
+  height: 350px;
+}
 
-    .image-11 {
-      top: 150px;
-      left: 65%;
-      width: 220px;
-      height: 220px;
-    }
+.image-10 {
+  top: 30px;
+  left: 35%;
+  width: 250px;
+  height: 250px;
+}
 
-    .image-12 {
-      top: 90px;
-      left: 85%;
-      width: 120px;
-      height: 120px;
-    }
+.image-11 {
+  top: 150px;
+  left: 65%;
+  width: 250px;
+  height: 250px;
+}
 
-    /* Hover Effect for Images */
-    .image:hover {
-      transform: scale(1.1); /* Slight enlargement */
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
-    }
+.image-12 {
+  top: 90px;
+  left: 85%;
+  width: 250px;
+  height: 200px;
+}
 
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .grid-container {
-        height: 350px;
-      }
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid-container {
+    height: 300px;
+  }
 
-      .image {
-        width: 120px;
-        height: 120px;
-      }
-    }
+  .image {
+    width: 100px;
+    height: 100px;
+  }
+}
 
-    /* Form Styling */
-    .form-container {
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      width: 300px;
-      margin: 20px auto;
-      text-align: left;
-    }
+/* Form Styling */
+.form-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto;
+  text-align: left;
+}
 
-    .signup-form input,
-    .signup-form button {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+.signup-form input,
+.signup-form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-    .signup-form button {
-      background-color: #e60023;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
+.signup-form button {
+  background-color: #e60023;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
-    .signup-form .google-btn {
-      background-color: #4285f4;
-      color: white;
-    }
+.signup-form .google-btn {
+  background-color: #4285f4;
+  color: white;
+}
+
+
+
+
     </style>
 </head>
 <body>
@@ -340,54 +335,59 @@
 
 
 
-    <!-- Section 1: Save Ideas You Like -->
-    <div class="section yellow">
-        <h2>Save Ideas You Like</h2>
-        <p>Collect your favorites so you can get back to them later.</p>
-        <div class="grid-container">
-          <img src="1.jpg" alt="Fern future home vibes" class="image image-1">
-          <img src="2.jpg" alt="My Scandinavian bedroom" class="image image-2">
-          <img src="3.jpg" alt="The deck of my dreams" class="image image-3">
-          <img src="4.jpg" alt="Serve my" class="image image-4">
-        </div>
-      </div>
+  <!-- Section 1: Save Ideas You Like -->
+  <div class="section yellow">
+    <h2>Save Ideas You Like</h2>
+    <p>Collect your favorites so you can get back to them later.</p>
+    <div class="grid-container">
+      <img src="1.jpg" alt="Fern future home vibes" class="image image-1">
+      <img src="2.jpg" alt="My Scandinavian bedroom" class="image image-2">
+      <img src="3.jpg" alt="The deck of my dreams" class="image image-3">
+      <img src="4.jpg" alt="Serve my" class="image image-4">
+    </div>
+  </div>
+
+  <!-- Section 2: Search for an Idea -->
+  <div class="section pink">
+    <h2>Search for an Idea</h2>
+    <p>What do you want to try next? Think of something you’re into.</p>
+    <div class="grid-container">
+      <img src="5.jpg" alt="Easy chicken dinner" class="image image-5">
+      <img src="6.jpg" alt="Fried chicken and salad" class="image image-6">
+      <img src="7.jpg" alt="Food 1" class="image image-7">
+      <img src="8.jpg" alt="Food 2" class="image image-8">
+    </div>
+  </div>
+
+  <!-- Section 3: Sign Up -->
+  <div class="section white">
+    <div class="form-container">
+      <h2>Sign Up to Get Your Ideas</h2>
+      <form class="signup-form">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Create a password" required>
+        <input type="date" required>
+        <button type="submit">Continue</button>
+        <p>Or sign up with:</p>
+        <button class="google-btn">Continue with Google</button>
+      </form>
+    </div>
+    <div class="grid-container">
+      <img src="9.jpg" alt="Sign up image 1" class="image image-9">
+      <img src="10.jpg" alt="Sign up image 2" class="image image-10">
+      <img src="11.jpg" alt="Sign up image 3" class="image image-11">
+      <img src="12.jpg" alt="Sign up image 4" class="image image-12">
+    </div>
+  </div>
     
-      <!-- Section 2: Search for an Idea -->
-      <div class="section pink">
-        <h2>Search for an Idea</h2>
-        <p>What do you want to try next? Think of something you’re into.</p>
-        <div class="grid-container">
-          <img src="5.jpg" alt="Easy chicken dinner" class="image image-5">
-          <img src="6.jpg" alt="Fried chicken and salad" class="image image-6">
-          <img src="7.jpg" alt="Food 1" class="image image-7">
-          <img src="8.jpg" alt="Food 2" class="image image-8">
-        </div>
-      </div>
-    
-      <!-- Section 3: Sign Up -->
-      <div class="section white">
-        <div class="form-container">
-          <h2>Sign Up to Get Your Ideas</h2>
-          <form class="signup-form">
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Create a password" required>
-            <input type="date" required>
-            <button type="submit">Continue</button>
-            <p>Or sign up with:</p>
-            <button class="google-btn">Continue with Google</button>
-          </form>
-        </div>
-        <div class="grid-container">
-          <img src="9.jpg" alt="Sign up image 1" class="image image-9">
-          <img src="10.jpg" alt="Sign up image 2" class="image image-10">
-          <img src="11.jpg" alt="Sign up image 3" class="image image-11">
-          <img src="12.jpg" alt="Sign up image 4" class="image image-12">
-        </div>
-      </div>
 
     <!-- Footer -->
-    <footer>
+    <footer style="color: #f5f5f5;">
+        <p style="color: #f5f5f5;"> the live coded version is at  <span style="color :#e60023">"https://otis-ke.github.io/plastic.com/"</span></p>
+        
+        <p style="color: #f5f5f5;"> this demo site is designed and developed by otis-ke  <span style="color :#e60023">  "https://otis-ke.github.io/portfolio/" </span></p>
         <p>&copy; 2024 Plastic Bags Pro. All rights reserved.</p>
+        
     </footer>
 </body>
 </html>
