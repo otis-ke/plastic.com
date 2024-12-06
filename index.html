@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic Bags Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: "Playfair Display", serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Playfair Display Variable Style */
+        .playfair-display {
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+        }
+
+        .playfair-display-bold {
+            font-weight: 900;
+        }
+
+        .playfair-display-medium {
+            font-weight: 500;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(90deg, #5170ff, #ff66c4);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            background-color: #f5f5f5;
+            padding: 2rem 1rem;
+        }
+
+        .hero-section h2 {
+            margin-bottom: 1rem;
+        }
+
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Features Section */
+        .features {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #f9f9f9;
+        }
+
+        .features h2 {
+            margin-bottom: 1rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .feature {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(90deg, #5170ff, #ff66c4);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .cta button {
+            background-color: white;
+            color: #00897b;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .cta button:hover {
+            background-color: #004d40;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #222;
+            color: white;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #222;
+            color: white;
+        }
+
+
+
+
+
+
+
+
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+    }
+
+    /* Grid Container */
+    .grid-container {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 450px; /* Increased height slightly */
+    }
+
+    .image {
+      position: absolute;
+      border-radius: 8px;
+      object-fit: cover;
+      transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    }
+
+    /* Enlarged Layout */
+    .image-1 {
+      top: 20px;
+      left: 10%;
+      width: 220px; /* Increased size */
+      height: 270px;
+    }
+
+    .image-2 {
+      top: 10px;
+      left: 40%;
+      width: 170px;
+      height: 170px;
+    }
+
+    .image-3 {
+      top: 200px;
+      left: 60%;
+      width: 240px;
+      height: 140px;
+    }
+
+    .image-4 {
+      top: 100px;
+      left: 80%;
+      width: 120px;
+      height: 120px;
+    }
+
+    .image-5 {
+      top: 0px;
+      left: 5%;
+      width: 270px;
+      height: 270px;
+    }
+
+    .image-6 {
+      top: 20px;
+      left: 35%;
+      width: 220px;
+      height: 320px;
+    }
+
+    .image-7 {
+      top: 200px;
+      left: 60%;
+      width: 170px;
+      height: 170px;
+    }
+
+    .image-8 {
+      top: 50px;
+      left: 80%;
+      width: 140px;
+      height: 140px;
+    }
+
+    .image-9 {
+      top: 10px;
+      left: 5%;
+      width: 220px;
+      height: 270px;
+    }
+
+    .image-10 {
+      top: 30px;
+      left: 35%;
+      width: 170px;
+      height: 170px;
+    }
+
+    .image-11 {
+      top: 150px;
+      left: 65%;
+      width: 220px;
+      height: 220px;
+    }
+
+    .image-12 {
+      top: 90px;
+      left: 85%;
+      width: 120px;
+      height: 120px;
+    }
+
+    /* Hover Effect for Images */
+    .image:hover {
+      transform: scale(1.1); /* Slight enlargement */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .grid-container {
+        height: 350px;
+      }
+
+      .image {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    /* Form Styling */
+    .form-container {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    .signup-form input,
+    .signup-form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .signup-form button {
+      background-color: #e60023;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .signup-form .google-btn {
+      background-color: #4285f4;
+      color: white;
+    }
+    </style>
+</head>
+<body>
+   
+    <header class="playfair-display-bold">
+        <h1>Welcome to Plastic Bags Pro</h1>
+        <p>Your One-Stop Shop for Durable and Eco-Friendly Bags</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section playfair-display-medium">
+        <h2>Durable and Eco-Friendly Bags for Every Need</h2>
+        <img src="bags.png" alt="Durable Eco-Friendly Bags">
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2 class="playfair-display-bold">Why Choose Our Bags?</h2>
+        <div class="feature-grid">
+            <div class="feature playfair-display-medium">
+                <h3>Eco-Friendly</h3>
+                <p>Our biodegradable bags reduce plastic waste and support sustainability.</p>
+            </div>
+            <div class="feature playfair-display-medium">
+                <h3>Durability</h3>
+                <p>Heavy-duty plastic bags designed to handle the toughest tasks.</p>
+            </div>
+            <div class="feature playfair-display-medium">
+                <h3>Customizable</h3>
+                <p>Add your logo and branding to make our products uniquely yours.</p>
+            </div>
+            <div class="feature playfair-display-medium">
+                <h3>Affordable</h3>
+                <p>Competitive pricing ensures great value for your money.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2 class="playfair-display-bold">Ready to Place Your Order?</h2>
+        <button class="playfair-display-medium">Shop Now</button>
+    </section>
+
+
+
+    <!-- Section 1: Save Ideas You Like -->
+    <div class="section yellow">
+        <h2>Save Ideas You Like</h2>
+        <p>Collect your favorites so you can get back to them later.</p>
+        <div class="grid-container">
+          <img src="1.jpg" alt="Fern future home vibes" class="image image-1">
+          <img src="2.jpg" alt="My Scandinavian bedroom" class="image image-2">
+          <img src="3.jpg" alt="The deck of my dreams" class="image image-3">
+          <img src="4.jpg" alt="Serve my" class="image image-4">
+        </div>
+      </div>
+    
+      <!-- Section 2: Search for an Idea -->
+      <div class="section pink">
+        <h2>Search for an Idea</h2>
+        <p>What do you want to try next? Think of something you’re into.</p>
+        <div class="grid-container">
+          <img src="5.jpg" alt="Easy chicken dinner" class="image image-5">
+          <img src="6.jpg" alt="Fried chicken and salad" class="image image-6">
+          <img src="7.jpg" alt="Food 1" class="image image-7">
+          <img src="8.jpg" alt="Food 2" class="image image-8">
+        </div>
+      </div>
+    
+      <!-- Section 3: Sign Up -->
+      <div class="section white">
+        <div class="form-container">
+          <h2>Sign Up to Get Your Ideas</h2>
+          <form class="signup-form">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Create a password" required>
+            <input type="date" required>
+            <button type="submit">Continue</button>
+            <p>Or sign up with:</p>
+            <button class="google-btn">Continue with Google</button>
+          </form>
+        </div>
+        <div class="grid-container">
+          <img src="9.jpg" alt="Sign up image 1" class="image image-9">
+          <img src="10.jpg" alt="Sign up image 2" class="image image-10">
+          <img src="11.jpg" alt="Sign up image 3" class="image image-11">
+          <img src="12.jpg" alt="Sign up image 4" class="image image-12">
+        </div>
+      </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Plastic Bags Pro. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
